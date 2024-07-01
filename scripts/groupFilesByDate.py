@@ -27,5 +27,5 @@ for file in files:
     
     # Copy the file to the corresponding folder if it doesn't exist
     if not os.path.exists(os.path.join(folder_name, file)):
-        shutil.copy(file, folder_name)
+        shutil.move(file, folder_name)
 
